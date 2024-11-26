@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home | Waniya Khan Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/jjj.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<style>
+  .card.highlight-card {
+    background-color: #1a1a1a !important; /* Surface color for boxed elements */
+  color: #fafafa !important; /* Default text color */
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+.card.highlight-card:hover{
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid #18d26e !important;
+  box-shadow: 0 0 10px #18d26e !important; 
+}
+h5.card-title.highlight-card-title{
+  font-size: 1.5rem !important;
+  color: #ffffff !important; 
+  margin-bottom: 10px !important;
+}
+
+
+/* Skills & Achievements Section Styling */
+
+/* Skills & Achievements Section Styling */
+.skills {
+  background-color: #2c2c2c;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .highlight-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+/* Section Title Styling */
+h3.section-title {
+  font-size: 1.5rem;
+  color: #18d26e;
+  text-align: center;
+  padding: 30px 0 !important;
+}
+
+/* Flexbox for the columns */
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: stretch; 
+}
+
+.skills .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+  flex: 1; 
+  max-width: 50%; 
+  min-height: 100%;
+}
+
+
+.skills-list, .achievements-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li, .achievements-list li {
+  font-size: 1rem;
+  color: #fafafa;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.skills-list li::before, .achievements-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #18d26e;
+  font-size: 1.5rem;
+}
+
+/* Add hover effect on skills and achievements list items */
+.skills-list li:hover, .achievements-list li:hover {
+  color: #18d26e;
+  cursor: pointer;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .skills .col-md-6 {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px; 
+  }
+}
+
+/* Ensure center alignment of content in the column */
+.skills .col-md-6 h3.section-title {
+  text-align: left;
+}
+
+.skills .col-md-6 ul {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #18d26e; /* Green text color */
+  border: 2px solid #18d26e; /* Green border */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+  background: transparent; /* Transparent background */
+}
+
+.cta-button i {
+  margin-left: 10px; /* Space between text and icon */
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #18d26e; /* Full green background */
+  color: #fff; /* White text and icon */
+}
+
+.cta-button:hover i {
+  color: #fff; /* White icon */
+  transform: translateX(5px); /* Smooth arrow movement */
+}
+.ctadiv{
+  padding-top: 24px;
+}
+@media (max-width: 768px) {
+  #hero .row {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center;   /* Center align horizontally */
+    text-align: center;    /* Center align text */
+  }
+
+  #hero .col-md-6 {
+    max-width: 100%; /* Ensure full width for both columns */
+  }
+
+  #hero .shee img {
+    max-width: 80%; /* Adjust image size for mobile */
+    height: auto;   /* Maintain aspect ratio */
+  }
+
+  .cta-button {
+    margin-top: 20px; /* Add spacing between button and other content */
+  }
+}
+
+</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Waniya Khan</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="content" data-aos="zoom-out" data-aos-delay="100">
+              <h4>Hey There!</h4>
+              <h2>I'm Waniya</h2>
+              <p>
+                <span class="typed"
+                  data-typed-items="Copywriter, Senior Content Writer, Freelance Writer, Blogger, Content Marketer & Strategist">
+                  Senior Content Writer
+                </span>
+              </p>
+             <div class="ctadiv">
+              <a href="contact.html" class="cta-button">
+                Get In Touch <i class="fas fa-arrow-right"></i>
+              </a>
+             </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="shee">
+              <img src="./assets/img/222.png" alt="Waniya Khan">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <!-- Portfolio Highlight -->
+    <section id="highlights" class="section highlights py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 highlight-title" style="color: #fff">Portfolio Highlights</h2>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">50+ Projects Completed</h5>
+                <p class="card-text card-text-highlight">
+                  Successfully developed web content for more than 50+ projects, helping businesses achieve their goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">Copywriting Expertise</h5>
+                <p class="card-text card-text-highlight">
+                  Created landing pages that led to revenue growth with exquisite copywriting skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">Email Marketing Campaigns</h5>
+                <p class="card-text card-text-highlight">
+                  Successfully created email sequences for marketing campaigns, driving customer engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">Client Proposals</h5>
+                <p class="card-text card-text-highlight">
+                  Created tailored project proposals for clients, ensuring clarity and successful collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">Blog Writing</h5>
+                <p class="card-text card-text-highlight">
+                  Wrote over 1,000 blog entries for online clients, delivering well-researched and engaging content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="card highlight-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              <div class="card-body">
+                <h5 class="card-title card-title-highlight">SEO Optimization</h5>
+                <p class="card-text card-text-highlight">
+                  Applied effective SEO strategies to enhance web content visibility and audience reach.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+      <!-- Skills & Achievements Section -->
+    <!-- Skills & Achievements Section -->
+<section id="skills" class="skills section" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <h2 class="text-center highlight-title">Skills & Achievements</h2>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="row">
+          <h3 class="section-title">Professional Skills</h3>
+        </div>
+        <ul class="skills-list">
+          <li>Content Marketing & Management</li>
+          <li>Article Writing & Blog Writing</li>
+          <li>SEO & Social Media Marketing</li>
+          <li>Copywriting & Email Sequences</li>
+          <li>Content Strategy & Proofreading</li>
+          <li>Keywords Research</li>
+        </ul>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+       <div class="row">
+        <h3 class="section-title">Notable Achievements</h3>
+       </div>
+        <ul class="achievements-list">
+          <li>Developed content for 50+ projects.</li>
+          <li>Created landing page copy resulting in revenue growth.</li>
+          <li>Designed email sequences for marketing campaigns.</li>
+          <li>Authored 1000–1500 blogs for online clients.</li>
+          <li>Applied client guidelines for optimal project output.</li>
+        </ul>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>
+
+  
+    
+    
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Let's <span class="intro">Connect!</span></h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/waniyakhanwrites/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:khanwaniya922@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="copyright">
+        <strong>&copy; 2024 Waniya Khan.</strong> Designed & Developed by <span>Umme Aimon.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
